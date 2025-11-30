@@ -90,6 +90,8 @@
     />
     <link rel="stylesheet" href="./asets/css/reset.css" />
     <link rel="stylesheet" href="./asets/css/style.css" />
+    <!-- animation -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>shine smile</title>
   </head>
   <body>
@@ -177,7 +179,7 @@
                 src="./asets/img/anh1.jpg
             "
                 alt="Our services"
-                class="service__img"
+                class="service__img"  data-aos="zoom-in-down"  data-aos-mirror="true"
               />
             </figure>
 
@@ -259,7 +261,7 @@
                   </div>
                 </div>
               </section>
-              <a href="#!" class="btn service__btn">All service</a>
+              <a href="#!" class="btn service__btn" id="service__btn-id">All service</a>
             </div>
           </div>
         </div>
@@ -268,7 +270,7 @@
       <!-- work -->
       <section class="work">
         <div class="container">
-          <h2 class="section-heading">How it works</h2>
+          <h2 class="section-heading"  data-aos="zoom-out-left" data-aos-offset="200" data-aos-duration="3000" data-aos-delay="3000">How it works</h2>
           <p class="section-desc work__desc">
             Exceptional dental care for all ages. Your great smile begins with a
             great dentist.
@@ -719,5 +721,12 @@
          </div>
       </div>
     </section class="footer">
+    <!-- js anmation -->
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 2000,
+    });
+  </script>
   </body>
 </html>
